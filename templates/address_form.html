@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Address Validation</title>
+</head>
+<body>
+    <h1>Address Validation</h1>
+    <form method="POST" action="/submit_address">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="street_number">Street Number:</label>
+            {{ form.street_number(size=30) }}
+        </div>
+        <div>
+            <label for="area">Area:</label>
+            {{ form.area(size=30) }}
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
