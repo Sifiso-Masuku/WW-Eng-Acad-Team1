@@ -12,8 +12,7 @@ def Email_Valid(email):
 user_email = input("Enter your email address: ")
 
 if Email_Valid(user_email):
-    # Email is valid, proceed to capture it in the database
-    # ... capture email in the database logic ...
+
     print("Email is valid. Capturing in the database.")
 else:
     print("Invalid email address. Please enter a valid email.")
